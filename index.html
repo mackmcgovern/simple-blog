@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>A Simple Blog</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div class="navbar">
+      <div class="container flex">
+        <a href="./index.html"><h1 class="p-2">A Simple Blog</h1></a>
+        <nav>
+          <ul>
+            <a class="nav-links" href=""><li>About</li></a>
+            <a class="nav-links" href=""><li>Contact</li></a>
+            <a class="nav-links" href=""><li>Search</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Recent Posts  -->
+    <div class="container grid recent-posts">
+      <div class="card card-lg">
+        <a href="./post.html"><img src="./images/cold.jpg" alt="" /></a>
+        <p class="post-genre light-txt">Adventure</p>
+        <h2 class="post-title md">Cold Water Swimming</h2>
+      </div>
+
+      <div class="card card-md">
+        <a href=""><img src="./images/yoga.jpg" alt="" /></a>
+        <p class="post-genre light-txt">Health</p>
+        <h2 class="post-title md">Benefits of Yoga</h2>
+      </div>
+
+      <div class="card card-md">
+        <a href=""><img src="./images/mushroom-1.jpg" alt="" /></a>
+        <p class="post-genre light-txt">Foraging</p>
+        <h2 class="post-title md">Mushroom Hunting</h2>
+      </div>
+
+      <div class="card card-lg">
+        <a href=""><img src="./images/backpacking.jpg" alt="" /></a>
+        <p class="post-genre light-txt">Adventure</p>
+        <h2 class="post-title md">One Year of Backpacking</h2>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="#" class="btn btn-light">View All</a>
+    </div>
+
+    <!-- Subscribe Section  -->
+    <div class="subscribe">
+      <form action="#">
+        <ul>
+          <li><h3 class="md">Subscribe to the blog</h3></li>
+          <li>
+            <input type="email" name="email" id="email" placeholder="Email:" />
+          </li>
+          <li><button type="submit" class="btn btn-dark">Subscribe</button></li>
+        </ul>
+      </form>
+    </div>
+
+    <!-- FIGURE OUT BUTTON THING - SHOULD IT BE A BUTTON TAG?  -->
+
+    <!-- Footer  -->
+    <footer>
+      <div class="container">
+        <ul class="social-links">
+          <li><a href=""><img src="./icons/facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="./icons/insta-round.svg" alt=""></a></li>
+          <li><a href=""><img src="./icons/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
