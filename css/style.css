@@ -255,6 +255,10 @@ h1 {
 }
 
 /* Post page  */
+.main-title {
+    font-size: 3rem;
+}
+
 .post-info {
     /* grid-column: 1; */
     align-self: center;
