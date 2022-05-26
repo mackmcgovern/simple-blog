@@ -1,0 +1,88 @@
+
+
+/* Flex and grid  */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 35px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Cards  */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card a {
+    transition: transform .8s;
+}
+
+.card a:hover {
+    transform: scale(1.01);
+}
+
+.post-title {
+    font-weight: 900;
+}
+
+.post-genre {
+    padding: 5px 0;
+    letter-spacing: 0.05rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: var(--light-txt);
+}
+
+.card-lg img,
+.card-md img {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.card-lg {
+    grid-column: span 7;
+}
+
+.card-md {
+    grid-column: span 5;
+}
+
+.card-sm {
+    grid-column: span 3;
+}
+
+/* Buttons  */
+.btn {
+    padding: 15px 50px;
+    letter-spacing: 0.2rem;
+    border-radius: 3px;
+    transition: 0.5s;
+    box-shadow: 0 0 1px #818abe;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-light {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);  
+    background-color: transparent;
+}
+
+.btn-light:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color)
+}
