@@ -9,62 +9,70 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <div class="navbar">
+    <header class="navbar">
       <div class="container flex">
-        <a href="./index.html"><h1 class="p-2">A Simple Blog</h1></a>
+        <h1 class="p-2"><a href="./index.html">A Simple Blog</a></h1>
         <nav>
           <ul>
-            <a class="nav-links" href=""><li>About</li></a>
-            <a class="nav-links" href=""><li>Contact</li></a>
-            <a class="nav-links" href=""><li>Search</li></a>
+            <li><a href="" class="nav-links">About</a></li>
+            <li><a href="" class="nav-links">Contact</a></li>
+            <li>
+              <input type="search" name="q" id="q" placeholder="Search" />
+            </li>
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
 
     <!-- Recent Posts  -->
-    <div class="container grid recent-posts">
-      <div class="card card-lg">
-        <a href="./post.html"><img src="./images/cold.jpg" alt="icey lake"/></a>
-        <p class="post-genre">Adventure</p>
-        <h2 class="post-title md">Cold Water Swimming</h2>
+    <main>
+      <div class="container grid recent-posts">
+        <div class="card card-lg">
+          <a href="./post.html"
+            ><img src="./images/cold.jpg" alt="icey lake"
+          /></a>
+          <p class="post-genre">Adventure</p>
+          <h2 class="post-title md">Cold Water Swimming</h2>
+        </div>
+
+        <div class="card card-md">
+          <a href=""><img src="./images/yoga.jpg" alt="woman doing yoga" /></a>
+          <p class="post-genre">Health</p>
+          <h2 class="post-title md">Benefits of Yoga</h2>
+        </div>
+
+        <div class="card card-md">
+          <a href=""><img src="./images/mushroom-1.jpg" alt="mushrooms" /></a>
+          <p class="post-genre">Nature</p>
+          <h2 class="post-title md">Mushroom Hunting</h2>
+        </div>
+
+        <div class="card card-lg">
+          <a href=""><img src="./images/backpacking.jpg" alt="backpack" /></a>
+          <p class="post-genre">Adventure</p>
+          <h2 class="post-title md">One Year of Backpacking</h2>
+        </div>
       </div>
 
-      <div class="card card-md">
-        <a href=""><img src="./images/yoga.jpg" alt="woman doing yoga"/></a>
-        <p class="post-genre">Health</p>
-        <h2 class="post-title md">Benefits of Yoga</h2>
+      <div class="view-all">
+        <a href="#" class="btn btn-light">View All</a>
       </div>
-
-      <div class="card card-md">
-        <a href=""><img src="./images/mushroom-1.jpg" alt="mushrooms"/></a>
-        <p class="post-genre">Nature</p>
-        <h2 class="post-title md">Mushroom Hunting</h2>
-      </div>
-
-      <div class="card card-lg">
-        <a href=""><img src="./images/backpacking.jpg" alt="backpack"/></a>
-        <p class="post-genre">Adventure</p>
-        <h2 class="post-title md">One Year of Backpacking</h2>
-      </div>
-    </div>
-
-    <div class="view-all">
-      <a href="#" class="btn btn-light">View All</a>
-    </div>
+    </main>
 
     <!-- Subscribe Section  -->
-    <div class="subscribe bg-secondary">
+    <section class="subscribe bg-secondary">
       <form action="#">
         <ul>
           <li><h3 class="md sub-heading">Subscribe to the blog</h3></li>
           <li>
             <input type="email" name="email" id="email" placeholder="Email:" />
           </li>
-          <li><button type="submit" class="btn btn-light">Subscribe</button></li>
+          <li>
+            <button type="submit" class="btn btn-light">Subscribe</button>
+          </li>
         </ul>
       </form>
-    </div>
+    </section>
 
     <!-- FIGURE OUT BUTTON THING - SHOULD IT BE A BUTTON TAG?  -->
 
@@ -72,9 +80,19 @@
     <footer class="bg-dark">
       <div class="container">
         <ul class="social-links">
-          <li><a href=""><img src="./icons/facebook.svg" alt="facebook icon"></a></li>
-          <li><a href=""><img src="./icons/insta-round.svg" alt="instagram icon"></a></li>
-          <li><a href=""><img src="./icons/twitter.svg" alt="twitter icon"></a></li>
+          <li>
+            <a href=""
+              ><img src="./icons/facebook.svg" alt="facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./icons/insta-round.svg" alt="instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a href=""><img src="./icons/twitter.svg" alt="twitter icon" /></a>
+          </li>
         </ul>
       </div>
     </footer>
