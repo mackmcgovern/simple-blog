@@ -6,7 +6,7 @@
   --main-bg-color: #fff;
   --secondary-bg-color: #f4f4f4;
   --accent-color: #1c1e29;
-  --light-txt: #9f9f9f;
+  --light-txt: #7d7d7d;
 }
 
 /* CSS Reset  */
@@ -36,7 +36,6 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-  /* box-shadow: 0 0 2px #818abe; */
 }
 
 a,
@@ -81,12 +80,13 @@ input[type="search"]:hover {
 input[type="search"] {
   border: none;
   width: 60px;
-  color: var(--accent-color);
 }
 
 input[type="search"]::placeholder {
-  opacity: 1;
+  opacity: 0.6;
   font-size: 16px;
+  color: var(--accent-color);
+  font-family: "Lato", sans-serif;
 }
 
 input[type="search"]:focus {
@@ -161,16 +161,16 @@ input[type="search"]:focus {
   text-align: center;
 }
 
-/* Subscribe Section  */
-.subscribe ul {
-  margin: 0 auto;
-  padding: 30px 0;
-}
+.subscribe form {
+    margin: 0 auto;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+  
+  .form-element {
+    margin: 30px auto;
+  }
 
-.subscribe li {
-  margin: 50px 0;
-  text-align: center;
-}
 
 .subscribe input[type="email"] {
   width: 60%;
@@ -179,15 +179,13 @@ input[type="search"]:focus {
   background-color: transparent;
   border: none;
   border-bottom: solid 1px var(--accent-color);
-  /* border-radius: 3px; */
-  /* box-shadow: 0 0 1px #818abe; */
   box-shadow: 0 2px 2px -2px var(--accent-color);
 }
 
 .subscribe input[type="email"]::placeholder {
+  font-family: "Lato", sans-serif;
   color: var(--accent-color);
   opacity: 1;
-  font-size: 14px;
   letter-spacing: 0.2rem;
 }
 
